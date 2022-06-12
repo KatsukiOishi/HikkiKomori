@@ -3,10 +3,10 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -72,6 +72,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 </layers>
 <board>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyY2NlZGVl" projecturn="a.cGVyc29uYWw6dWUyY2NlZGVlIzIwMjExMDIwNDU3NjI1ODc2" f3durn="urn:adsk.wipprod:dm.lineage:TEBGK38nRHKo_10KvwLmlQ" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="2512282e-ce53-487e-96f8-e947947ddf7f" lastsyncedrevisionid="2512282e-ce53-487e-96f8-e947947ddf7f" lastboardhashguid="b4388076-1897-3047-8e53-717ffb1df462" lastpushedtime="2022-06-12T11:56:17Z" linktopcb3d="true"/>
 <plain>
 <wire x1="0" y1="0" x2="60" y2="0" width="0" layer="20"/>
 <wire x1="60" y1="0" x2="60" y2="25" width="0" layer="20"/>
@@ -160,6 +161,18 @@
 <wire x1="43.7" y1="16.3" x2="48.9" y2="16.3" width="0.6" layer="42"/>
 <wire x1="48.9" y1="16.3" x2="51.5" y2="18.9" width="0.6" layer="42"/>
 <wire x1="51.5" y1="18.9" x2="51.5" y2="21.1" width="0.6" layer="42"/>
+<wire x1="34.6" y1="4.9" x2="28.9" y2="4.9" width="0.15" layer="21"/>
+<wire x1="34.6" y1="3" x2="28.9" y2="3" width="0.15" layer="21"/>
+<wire x1="34.6" y1="1" x2="32.1" y2="1" width="0.15" layer="21"/>
+<hole x="2" y="23" drill="2.5"/>
+<hole x="27" y="23" drill="2.5"/>
+<circle x="27" y="23" radius="2" width="0.1524" layer="41"/>
+<circle x="27" y="23" radius="2" width="0.1524" layer="42"/>
+<circle x="2" y="23" radius="2" width="0.1524" layer="42"/>
+<circle x="2" y="23" radius="2" width="0.1524" layer="41"/>
+<circle x="30" y="2" radius="2" width="0.1524" layer="41"/>
+<circle x="30" y="2" radius="2" width="0.1524" layer="42"/>
+<hole x="30" y="2" drill="2.5"/>
 </plain>
 <libraries>
 <library name="IT_MotorControlIC">
@@ -656,6 +669,37 @@
 </package3d>
 </packages3d>
 </library>
+<library name="LED">
+<packages>
+<package name="LEDC1608X39N_G" urn="urn:adsk.eagle:footprint:16655954/2" locally_modified="yes">
+<description>Chip, 1.60 X 0.80 X 0.39 mm body
+&lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.39 mm&lt;/p&gt;</description>
+<wire x1="0.8" y1="0.7699" x2="-1.3099" y2="0.7699" width="0.127" layer="21"/>
+<wire x1="-1.3099" y1="0.7699" x2="-1.3099" y2="-0.7699" width="0.127" layer="21"/>
+<wire x1="-1.3099" y1="-0.7699" x2="0.8" y2="-0.7699" width="0.127" layer="21"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.12" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.12" layer="51"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.12" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.12" layer="51"/>
+<smd name="A" x="-0.9" y="0" dx="0.6" dy="1" layer="1"/>
+<smd name="K" x="0.9" y="0" dx="0.6" dy="1" layer="1"/>
+<text x="0" y="1.4049" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.4049" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<wire x1="-0.4318" y1="0.4064" x2="-0.4318" y2="-0.4064" width="0.127" layer="21"/>
+<wire x1="-0.4318" y1="-0.4064" x2="0.3556" y2="0" width="0.127" layer="21"/>
+<wire x1="0.3556" y1="0" x2="-0.4318" y2="0.4064" width="0.127" layer="21"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="LEDC1608X39N_G" urn="urn:adsk.eagle:package:16655963/3" type="model">
+<description>Chip, 1.60 X 0.80 X 0.39 mm body
+&lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.39 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="LEDC1608X39N_G"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -875,7 +919,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="45.5" y="7.3" size="1.27" layer="21" rot="R270"/>
 </element>
 <element name="C3" library="RCL" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10u" x="38.5" y="5" smashed="yes" rot="R270">
-<attribute name="NAME" x="36" y="6" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="37.9" y="2.8" size="1.27" layer="25" rot="R270"/>
 <attribute name="POPULARITY" value="88" x="38.5" y="5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="38.5" y="5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="35.96" y="6.27" size="1.27" layer="27" rot="R270"/>
@@ -931,6 +975,36 @@ design rules under a new name.</description>
 <element name="CN2" library="jst-xh" package="B7B-XH-A" package3d_urn="urn:adsk.eagle:package:36149622/2" value="" x="56" y="11" smashed="yes" rot="R90">
 <attribute name="NAME" x="54.1" y="21.2" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="61.5" y="1.05" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="LPWM" library="LED" package="LEDC1608X39N_G" package3d_urn="urn:adsk.eagle:package:16655963/3" value="OSTG1608C1A" x="35.7" y="5.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="31.7" y="6.3951" size="1.27" layer="25" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="35.7" y="7.2049" size="1.27" layer="27" rot="R180" align="top-center"/>
+</element>
+<element name="EN" library="LED" package="LEDC1608X39N_G" package3d_urn="urn:adsk.eagle:package:16655963/3" value="OSTG1608C1A" x="35.7" y="2" smashed="yes" rot="R180">
+<attribute name="NAME" x="33.2" y="2.5" size="1.27" layer="25" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="35.7" y="3.4049" size="1.27" layer="27" rot="R180" align="top-center"/>
+</element>
+<element name="RPWM" library="LED" package="LEDC1608X39N_G" package3d_urn="urn:adsk.eagle:package:16655963/3" value="OSTG1608C1A" x="35.7" y="3.9" smashed="yes" rot="R180">
+<attribute name="NAME" x="31.6" y="4.5" size="1.27" layer="25" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="35.7" y="5.3049" size="1.27" layer="27" rot="R180" align="top-center"/>
+</element>
+<element name="R5" library="RCL" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k" x="35.7" y="6" smashed="yes" rot="MR0">
+<attribute name="NAME" x="36.335" y="6.635" size="1.27" layer="26" rot="MR0"/>
+<attribute name="POPULARITY" value="77" x="35.7" y="6" size="1.27" layer="28" rot="MR0" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="35.7" y="6" size="1.27" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="36.335" y="4.095" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R6" library="RCL" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k" x="35.7" y="1.8" smashed="yes" rot="MR0">
+<attribute name="NAME" x="36.335" y="2.435" size="1.27" layer="26" rot="MR0"/>
+<attribute name="POPULARITY" value="77" x="35.7" y="1.8" size="1.27" layer="28" rot="MR0" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="35.7" y="1.8" size="1.27" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="36.335" y="-0.105" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R7" library="RCL" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k" x="35.7" y="3.9" smashed="yes" rot="MR0">
+<attribute name="NAME" x="36.335" y="4.535" size="1.27" layer="26" rot="MR0"/>
+<attribute name="POPULARITY" value="77" x="35.7" y="3.9" size="1.27" layer="28" rot="MR0" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="35.7" y="3.9" size="1.27" layer="28" rot="MR0" display="off"/>
+<attribute name="VALUE" x="36.335" y="1.995" size="1.27" layer="28" rot="MR0"/>
 </element>
 </elements>
 <signals>
@@ -1013,6 +1087,9 @@ design rules under a new name.</description>
 <contactref element="C7" pad="2"/>
 <contactref element="CN2" pad="7"/>
 <via x="50" y="22.6" extent="1-16" drill="1" diameter="2"/>
+<contactref element="EN" pad="K"/>
+<contactref element="LPWM" pad="K"/>
+<contactref element="RPWM" pad="K"/>
 </signal>
 <signal name="VDD" class="1">
 <contactref element="U1" pad="VS1"/>
@@ -1123,7 +1200,7 @@ design rules under a new name.</description>
 <via x="24" y="20.5" extent="1-16" drill="0.35"/>
 <via x="25" y="21" extent="1-16" drill="0.35"/>
 <via x="26" y="20.5" extent="1-16" drill="0.35"/>
-<via x="27" y="21" extent="1-16" drill="0.35"/>
+<via x="27" y="20" extent="1-16" drill="0.35"/>
 <via x="28" y="20.5" extent="1-16" drill="0.35"/>
 <via x="29" y="21" extent="1-16" drill="0.35"/>
 <via x="30" y="22" extent="1-16" drill="0.35"/>
@@ -1369,8 +1446,14 @@ design rules under a new name.</description>
 <wire x1="49.3" y1="2.8" x2="50.3" y2="3.8" width="0.15" layer="16"/>
 <wire x1="51.4" y1="3.8" x2="52.1" y2="4.5" width="0.15" layer="16"/>
 <wire x1="50.3" y1="3.8" x2="51.4" y2="3.8" width="0.15" layer="16"/>
+<contactref element="IC1" pad="13"/>
+<wire x1="49.275" y1="9.8" x2="49.275" y2="7.825" width="0.15" layer="1"/>
+<wire x1="49.275" y1="7.825" x2="50" y2="7.1" width="0.15" layer="1"/>
+<wire x1="50" y1="7.1" x2="53.4" y2="7.1" width="0.15" layer="1"/>
+<wire x1="54.8" y1="8.5" x2="56" y2="8.5" width="0.15" layer="1"/>
+<wire x1="53.4" y1="7.1" x2="54.8" y2="8.5" width="0.15" layer="1"/>
 </signal>
-<signal name="LPWM1">
+<signal name="LPWM">
 <contactref element="IC1" pad="2"/>
 <contactref element="CN2" pad="4"/>
 <wire x1="41.655" y1="2.18" x2="41.655" y2="3.055" width="0.15" layer="1"/>
@@ -1379,9 +1462,15 @@ design rules under a new name.</description>
 <wire x1="51.3" y1="5" x2="51.3" y2="6.3" width="0.15" layer="16"/>
 <wire x1="41.655" y1="3.055" x2="42.7" y2="4.1" width="0.15" layer="1"/>
 <wire x1="42.7" y1="4.1" x2="50.4" y2="4.1" width="0.15" layer="1"/>
-<wire x1="51.3" y1="6.3" x2="56" y2="11" width="0.15" layer="16"/>
+<wire x1="51.8" y1="6.8" x2="56" y2="11" width="0.15" layer="16"/>
+<contactref element="IC1" pad="11"/>
+<wire x1="51.815" y1="9.8" x2="51.8" y2="9.785" width="0.15" layer="1"/>
+<wire x1="51.8" y1="9.785" x2="51.8" y2="8.6" width="0.15" layer="1"/>
+<via x="51.8" y="8.6" extent="1-16" drill="0.35"/>
+<wire x1="51.8" y1="8.6" x2="51.8" y2="6.8" width="0.15" layer="16"/>
+<wire x1="51.8" y1="6.8" x2="51.3" y2="6.3" width="0.15" layer="16"/>
 </signal>
-<signal name="RPWM1">
+<signal name="RPWM">
 <contactref element="IC1" pad="6"/>
 <contactref element="CN2" pad="2"/>
 <wire x1="46.735" y1="2.18" x2="46.735" y2="2.935" width="0.15" layer="1"/>
@@ -1392,6 +1481,68 @@ design rules under a new name.</description>
 <wire x1="52.8" y1="4" x2="52.8" y2="4.9" width="0.15" layer="16"/>
 <wire x1="53.9" y1="6" x2="56" y2="6" width="0.15" layer="16"/>
 <wire x1="52.8" y1="4.9" x2="53.9" y2="6" width="0.15" layer="16"/>
+<contactref element="IC1" pad="15"/>
+<wire x1="46.735" y1="9.8" x2="46.735" y2="7.265" width="0.15" layer="1"/>
+<wire x1="46.735" y1="7.265" x2="47.4" y2="6.6" width="0.15" layer="1"/>
+<wire x1="47.4" y1="6.6" x2="54" y2="6.6" width="0.15" layer="1"/>
+<wire x1="54" y1="6.6" x2="54.6" y2="6" width="0.15" layer="1"/>
+<wire x1="54.6" y1="6" x2="56" y2="6" width="0.15" layer="1"/>
+</signal>
+<signal name="N$5">
+<contactref element="LPWM" pad="A"/>
+<contactref element="R5" pad="1"/>
+<wire x1="36.55" y1="6" x2="36.6" y2="5.95" width="0.15" layer="16"/>
+<wire x1="36.6" y1="5.95" x2="36.6" y2="5.8" width="0.15" layer="16"/>
+<via x="36.6" y="5.8" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="N$6">
+<contactref element="EN" pad="A"/>
+<contactref element="R6" pad="1"/>
+<wire x1="36.55" y1="1.8" x2="36.6" y2="1.85" width="0.15" layer="16"/>
+<wire x1="36.6" y1="1.85" x2="36.6" y2="2" width="0.15" layer="16"/>
+<via x="36.6" y="2" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="N$7">
+<contactref element="RPWM" pad="A"/>
+<contactref element="R7" pad="1"/>
+<wire x1="36.55" y1="3.9" x2="36.6" y2="3.9" width="0.15" layer="16"/>
+<via x="36.6" y="3.9" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="N$8">
+<contactref element="IC1" pad="9"/>
+<contactref element="R5" pad="2"/>
+<wire x1="34.85" y1="6" x2="34.85" y2="5.45" width="0.15" layer="16"/>
+<wire x1="34.85" y1="5.45" x2="35.4" y2="4.9" width="0.15" layer="16"/>
+<wire x1="35.4" y1="4.9" x2="47.8" y2="4.9" width="0.15" layer="16"/>
+<wire x1="48.6" y1="4.1" x2="48.6" y2="2" width="0.15" layer="16"/>
+<wire x1="48.6" y1="2" x2="49.3" y2="1.3" width="0.15" layer="16"/>
+<wire x1="49.3" y1="1.3" x2="50.2" y2="1.3" width="0.15" layer="16"/>
+<wire x1="50.2" y1="1.3" x2="50.5" y2="1.6" width="0.15" layer="16"/>
+<via x="50.5" y="1.6" extent="1-16" drill="0.35"/>
+<wire x1="50.5" y1="1.6" x2="50.5" y2="2.135" width="0.15" layer="1"/>
+<wire x1="50.5" y1="2.135" x2="50.545" y2="2.18" width="0.15" layer="1"/>
+<wire x1="47.8" y1="4.9" x2="48.6" y2="4.1" width="0.15" layer="16"/>
+</signal>
+<signal name="N$9">
+<contactref element="IC1" pad="7"/>
+<contactref element="R6" pad="2"/>
+<wire x1="48.005" y1="2.18" x2="48.005" y2="1.705" width="0.15" layer="1"/>
+<wire x1="48.005" y1="1.705" x2="47.3" y2="1" width="0.15" layer="1"/>
+<via x="47.3" y="1" extent="1-16" drill="0.35"/>
+<wire x1="47.3" y1="1" x2="47.2" y2="0.9" width="0.15" layer="16"/>
+<wire x1="35.75" y1="0.9" x2="34.85" y2="1.8" width="0.15" layer="16"/>
+<wire x1="47.2" y1="0.9" x2="35.75" y2="0.9" width="0.15" layer="16"/>
+</signal>
+<signal name="N$10">
+<contactref element="IC1" pad="5"/>
+<contactref element="R7" pad="2"/>
+<wire x1="45.465" y1="2.18" x2="45.465" y2="3.065" width="0.15" layer="1"/>
+<wire x1="45.465" y1="3.065" x2="45.6" y2="3.2" width="0.15" layer="1"/>
+<via x="45.6" y="3.2" extent="1-16" drill="0.35"/>
+<wire x1="45.6" y1="3.2" x2="45.3" y2="2.9" width="0.15" layer="16"/>
+<wire x1="45.3" y1="2.9" x2="35.5" y2="2.9" width="0.15" layer="16"/>
+<wire x1="35.5" y1="2.9" x2="34.85" y2="3.55" width="0.15" layer="16"/>
+<wire x1="34.85" y1="3.55" x2="34.85" y2="3.9" width="0.15" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
@@ -1404,6 +1555,11 @@ design rules under a new name.</description>
 </board>
 </drawing>
 <compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports Fusion synchronisation.
+This feature will not be available in this version and saving
+the document will break the link to the Fusion PCB feature.
+</note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
