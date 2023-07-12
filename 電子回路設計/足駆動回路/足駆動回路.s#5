@@ -2360,9 +2360,9 @@ Source:
 <part name="CN2" library="jst-xh" deviceset="B7B-XH-A" device="" package3d_urn="urn:adsk.eagle:package:36149622/2"/>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
-<part name="LPWM" library="LED" deviceset="OSTG1608C1A" device="" package3d_urn="urn:adsk.eagle:package:16655963/3"/>
-<part name="EN" library="LED" deviceset="OSTG1608C1A" device="" package3d_urn="urn:adsk.eagle:package:16655963/3"/>
-<part name="RPWM" library="LED" deviceset="OSTG1608C1A" device="" package3d_urn="urn:adsk.eagle:package:16655963/3"/>
+<part name="LPWM1" library="LED" deviceset="OSTG1608C1A" device="" package3d_urn="urn:adsk.eagle:package:16655963/3"/>
+<part name="EN1" library="LED" deviceset="OSTG1608C1A" device="" package3d_urn="urn:adsk.eagle:package:16655963/3"/>
+<part name="RPWM1" library="LED" deviceset="OSTG1608C1A" device="" package3d_urn="urn:adsk.eagle:package:16655963/3"/>
 <part name="R5" library="RCL" deviceset="R" device="1608" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="R6" library="RCL" deviceset="R" device="1608" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="R7" library="RCL" deviceset="R" device="1608" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
@@ -2402,9 +2402,9 @@ Source:
 <part name="CN4" library="jst-xh" deviceset="B7B-XH-A" device="" package3d_urn="urn:adsk.eagle:package:36149622/2"/>
 <part name="SUPPLY34" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY35" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
-<part name="LPWM1" library="LED" deviceset="OSTG1608C1A" device="" package3d_urn="urn:adsk.eagle:package:16655963/3"/>
-<part name="EN1" library="LED" deviceset="OSTG1608C1A" device="" package3d_urn="urn:adsk.eagle:package:16655963/3"/>
-<part name="RPWM1" library="LED" deviceset="OSTG1608C1A" device="" package3d_urn="urn:adsk.eagle:package:16655963/3"/>
+<part name="LPWM2" library="LED" deviceset="OSTG1608C1A" device="" package3d_urn="urn:adsk.eagle:package:16655963/3"/>
+<part name="EN2" library="LED" deviceset="OSTG1608C1A" device="" package3d_urn="urn:adsk.eagle:package:16655963/3"/>
+<part name="RPWM2" library="LED" deviceset="OSTG1608C1A" device="" package3d_urn="urn:adsk.eagle:package:16655963/3"/>
 <part name="R12" library="RCL" deviceset="R" device="1608" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="R13" library="RCL" deviceset="R" device="1608" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="R14" library="RCL" deviceset="R" device="1608" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
@@ -2516,15 +2516,15 @@ Source:
 </instance>
 <instance part="SUPPLY16" gate="GND" x="55.88" y="238.76" smashed="yes"/>
 <instance part="SUPPLY17" gate="G$1" x="55.88" y="218.44" smashed="yes"/>
-<instance part="LPWM" gate="G$1" x="115.57" y="173.99" smashed="yes">
+<instance part="LPWM1" gate="G$1" x="115.57" y="173.99" smashed="yes">
 <attribute name="NAME" x="119.126" y="171.958" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="121.285" y="171.958" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="EN" gate="G$1" x="125.73" y="173.99" smashed="yes">
+<instance part="EN1" gate="G$1" x="125.73" y="173.99" smashed="yes">
 <attribute name="NAME" x="129.286" y="171.958" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="131.445" y="171.958" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="RPWM" gate="G$1" x="135.89" y="173.99" smashed="yes">
+<instance part="RPWM1" gate="G$1" x="135.89" y="173.99" smashed="yes">
 <attribute name="NAME" x="139.446" y="171.958" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="141.605" y="171.958" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -2637,15 +2637,15 @@ Source:
 </instance>
 <instance part="SUPPLY34" gate="GND" x="55.88" y="129.54" smashed="yes"/>
 <instance part="SUPPLY35" gate="G$1" x="55.88" y="109.22" smashed="yes"/>
-<instance part="LPWM1" gate="G$1" x="115.57" y="64.77" smashed="yes">
+<instance part="LPWM2" gate="G$1" x="115.57" y="64.77" smashed="yes">
 <attribute name="NAME" x="119.126" y="62.738" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="121.285" y="62.738" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="EN1" gate="G$1" x="125.73" y="64.77" smashed="yes">
+<instance part="EN2" gate="G$1" x="125.73" y="64.77" smashed="yes">
 <attribute name="NAME" x="129.286" y="62.738" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="131.445" y="62.738" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="RPWM1" gate="G$1" x="135.89" y="64.77" smashed="yes">
+<instance part="RPWM2" gate="G$1" x="135.89" y="64.77" smashed="yes">
 <attribute name="NAME" x="139.446" y="62.738" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="141.605" y="62.738" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -2785,12 +2785,12 @@ Source:
 <wire x1="53.34" y1="241.3" x2="55.88" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="EN" gate="G$1" pin="C"/>
+<pinref part="EN1" gate="G$1" pin="C"/>
 <pinref part="SUPPLY18" gate="GND" pin="GND"/>
-<pinref part="LPWM" gate="G$1" pin="C"/>
+<pinref part="LPWM1" gate="G$1" pin="C"/>
 <wire x1="115.57" y1="171.45" x2="125.73" y2="171.45" width="0.1524" layer="91"/>
 <junction x="125.73" y="171.45"/>
-<pinref part="RPWM" gate="G$1" pin="C"/>
+<pinref part="RPWM1" gate="G$1" pin="C"/>
 <wire x1="125.73" y1="171.45" x2="135.89" y2="171.45" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -2873,12 +2873,12 @@ Source:
 <wire x1="53.34" y1="132.08" x2="55.88" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="EN1" gate="G$1" pin="C"/>
+<pinref part="EN2" gate="G$1" pin="C"/>
 <pinref part="SUPPLY36" gate="GND" pin="GND"/>
-<pinref part="LPWM1" gate="G$1" pin="C"/>
+<pinref part="LPWM2" gate="G$1" pin="C"/>
 <wire x1="115.57" y1="62.23" x2="125.73" y2="62.23" width="0.1524" layer="91"/>
 <junction x="125.73" y="62.23"/>
-<pinref part="RPWM1" gate="G$1" pin="C"/>
+<pinref part="RPWM2" gate="G$1" pin="C"/>
 <wire x1="125.73" y1="62.23" x2="135.89" y2="62.23" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3070,19 +3070,19 @@ Source:
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="LPWM" gate="G$1" pin="A"/>
+<pinref part="LPWM1" gate="G$1" pin="A"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="EN" gate="G$1" pin="A"/>
+<pinref part="EN1" gate="G$1" pin="A"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="RPWM" gate="G$1" pin="A"/>
+<pinref part="RPWM1" gate="G$1" pin="A"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -3191,19 +3191,19 @@ Source:
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="LPWM1" gate="G$1" pin="A"/>
+<pinref part="LPWM2" gate="G$1" pin="A"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="EN1" gate="G$1" pin="A"/>
+<pinref part="EN2" gate="G$1" pin="A"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="RPWM1" gate="G$1" pin="A"/>
+<pinref part="RPWM2" gate="G$1" pin="A"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 </segment>
 </net>
