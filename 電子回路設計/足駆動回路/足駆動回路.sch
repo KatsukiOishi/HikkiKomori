@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -2193,6 +2193,401 @@ Source:
 </deviceset>
 </devicesets>
 </library>
+<library name="FLE_抵抗器">
+<packages>
+<package name="R1608" urn="urn:adsk.eagle:footprint:38223784/1" locally_modified="yes">
+<wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
+<wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1" dy="1.1" layer="1"/>
+<text x="0" y="1.2" size="0.8128" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.2" size="0.8128" layer="27" rot="R180" align="bottom-center">&gt;VALUE</text>
+<rectangle x1="0.4318" y1="-0.4318" x2="0.8382" y2="0.4318" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="R1608" urn="urn:adsk.eagle:package:38223785/2" type="model">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="R1608"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="R">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
+<text x="-3.81" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RC0603J" prefix="R">
+<description>&lt;h2&gt;チップ抵抗 RCシリーズ 1608サイズ&lt;/h2&gt;</description>
+<gates>
+<gate name="G$1" symbol="R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R1608">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:38223785/2"/>
+</package3dinstances>
+<technologies>
+<technology name="100K">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±8%" constant="no"/>
+<attribute name="05_COST" value="980" constant="no"/>
+<attribute name="06_QTY" value="5000" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-15321" constant="no"/>
+<attribute name="VALUE" value="100k" constant="no"/>
+</technology>
+<technology name="100R">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±7%" constant="no"/>
+<attribute name="05_COST" value="980" constant="no"/>
+<attribute name="06_QTY" value="5000" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-14660" constant="no"/>
+<attribute name="VALUE" value="100" constant="no"/>
+</technology>
+<technology name="10K">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±5%" constant="no"/>
+<attribute name="05_COST" value="980" constant="no"/>
+<attribute name="06_QTY" value="5000" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-15029" constant="no"/>
+<attribute name="VALUE" value="10k" constant="no"/>
+</technology>
+<technology name="10R">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±18%" constant="no"/>
+<attribute name="05_COST" value="850" constant="no"/>
+<attribute name="06_QTY" value="5000" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-13832" constant="no"/>
+<attribute name="VALUE" value="10" constant="no"/>
+</technology>
+<technology name="120R">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±25%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06121" constant="no"/>
+<attribute name="VALUE" value="120" constant="no"/>
+</technology>
+<technology name="12K">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±22%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06123" constant="no"/>
+<attribute name="VALUE" value="12k" constant="no"/>
+</technology>
+<technology name="150K">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±23%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06154" constant="no"/>
+<attribute name="VALUE" value="150k" constant="no"/>
+</technology>
+<technology name="15K">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±20%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06153" constant="no"/>
+<attribute name="VALUE" value="15k" constant="no"/>
+</technology>
+<technology name="180R">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±28%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06181" constant="no"/>
+<attribute name="VALUE" value="180" constant="no"/>
+</technology>
+<technology name="1K">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±6%" constant="no"/>
+<attribute name="05_COST" value="980" constant="no"/>
+<attribute name="06_QTY" value="5000" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-14122" constant="no"/>
+<attribute name="VALUE" value="1k" constant="no"/>
+</technology>
+<technology name="1K2">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±21%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06122" constant="no"/>
+<attribute name="VALUE" value="1.2k" constant="no"/>
+</technology>
+<technology name="1K8">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±34%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06182" constant="no"/>
+<attribute name="VALUE" value="1.8k" constant="no"/>
+</technology>
+<technology name="1M">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±17%" constant="no"/>
+<attribute name="05_COST" value="980" constant="no"/>
+<attribute name="06_QTY" value="5000" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-14609" constant="no"/>
+<attribute name="VALUE" value="1M" constant="no"/>
+</technology>
+<technology name="200R">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±35%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06201" constant="no"/>
+<attribute name="VALUE" value="200" constant="no"/>
+</technology>
+<technology name="20K">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±13%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06203" constant="no"/>
+<attribute name="VALUE" value="20k" constant="no"/>
+</technology>
+<technology name="220K">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±24%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06224" constant="no"/>
+<attribute name="VALUE" value="220k" constant="no"/>
+</technology>
+<technology name="220R">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±29%" constant="no"/>
+<attribute name="05_COST" value="850" constant="no"/>
+<attribute name="06_QTY" value="5000" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-13883" constant="no"/>
+<attribute name="VALUE" value="220" constant="no"/>
+</technology>
+<technology name="240R">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±32%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06241" constant="no"/>
+<attribute name="VALUE" value="240" constant="no"/>
+</technology>
+<technology name="270R">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±37%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06271" constant="no"/>
+<attribute name="VALUE" value="270" constant="no"/>
+</technology>
+<technology name="2K">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±26%" constant="no"/>
+<attribute name="05_COST" value="980" constant="no"/>
+<attribute name="06_QTY" value="5000" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-16120" constant="no"/>
+<attribute name="VALUE" value="2k" constant="no"/>
+</technology>
+<technology name="2K2">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±16%" constant="no"/>
+<attribute name="05_COST" value="980" constant="no"/>
+<attribute name="06_QTY" value="5000" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-16126" constant="no"/>
+<attribute name="VALUE" value="2.2k" constant="no"/>
+</technology>
+<technology name="2K4">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±27%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06242" constant="no"/>
+<attribute name="VALUE" value="2.4k" constant="no"/>
+</technology>
+<technology name="300R">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±31%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06301" constant="no"/>
+<attribute name="VALUE" value="300" constant="no"/>
+</technology>
+<technology name="330R">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±12%" constant="no"/>
+<attribute name="05_COST" value="980" constant="no"/>
+<attribute name="06_QTY" value="5000" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-16125" constant="no"/>
+<attribute name="VALUE" value="330" constant="no"/>
+</technology>
+<technology name="33K">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±33%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06333" constant="no"/>
+<attribute name="VALUE" value="33k" constant="no"/>
+</technology>
+<technology name="39K">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±36%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06393" constant="no"/>
+<attribute name="VALUE" value="39k" constant="no"/>
+</technology>
+<technology name="3K">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±30%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06302" constant="no"/>
+<attribute name="VALUE" value="3k" constant="no"/>
+</technology>
+<technology name="3K3">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±14%" constant="no"/>
+<attribute name="05_COST" value="980" constant="no"/>
+<attribute name="06_QTY" value="5000" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-14661" constant="no"/>
+<attribute name="VALUE" value="3.3k" constant="no"/>
+</technology>
+<technology name="470K">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±15%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06474" constant="no"/>
+<attribute name="VALUE" value="470k" constant="no"/>
+</technology>
+<technology name="470R">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±9%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06471" constant="no"/>
+<attribute name="VALUE" value="470" constant="no"/>
+</technology>
+<technology name="47K">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±11%" constant="no"/>
+<attribute name="05_COST" value="500" constant="no"/>
+<attribute name="06_QTY" value="2500" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-06473" constant="no"/>
+<attribute name="VALUE" value="47k" constant="no"/>
+</technology>
+<technology name="4K7">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±10%" constant="no"/>
+<attribute name="05_COST" value="980" constant="no"/>
+<attribute name="06_QTY" value="5000" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-14121" constant="no"/>
+<attribute name="VALUE" value="4.7k" constant="no"/>
+</technology>
+<technology name="510R">
+<attribute name="01_CLASS" value="チップ抵抗" constant="no"/>
+<attribute name="02_BENDER" value="秋月電子通商" constant="no"/>
+<attribute name="03_MAKER" value="FAITHFUL LINK INDUSTRIAL CORP." constant="no"/>
+<attribute name="04_CHARA" value="1/10W ±19%" constant="no"/>
+<attribute name="05_COST" value="980" constant="no"/>
+<attribute name="06_QTY" value="5000" constant="no"/>
+<attribute name="10_AKIZUKI_CODE" value="R-14662" constant="no"/>
+<attribute name="VALUE" value="510" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2291,6 +2686,14 @@ Source:
 <part name="R13" library="RCL" deviceset="R" device="1608" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="R14" library="RCL" deviceset="R" device="1608" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="SUPPLY36" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="R15" library="FLE_抵抗器" deviceset="RC0603J" device="" package3d_urn="urn:adsk.eagle:package:38223785/2" technology="10K" value="10k"/>
+<part name="R16" library="FLE_抵抗器" deviceset="RC0603J" device="" package3d_urn="urn:adsk.eagle:package:38223785/2" technology="10K" value="10k"/>
+<part name="R17" library="FLE_抵抗器" deviceset="RC0603J" device="" package3d_urn="urn:adsk.eagle:package:38223785/2" technology="10K" value="10k"/>
+<part name="R18" library="FLE_抵抗器" deviceset="RC0603J" device="" package3d_urn="urn:adsk.eagle:package:38223785/2" technology="10K" value="10k"/>
+<part name="R19" library="FLE_抵抗器" deviceset="RC0603J" device="" package3d_urn="urn:adsk.eagle:package:38223785/2" technology="10K" value="10k"/>
+<part name="R20" library="FLE_抵抗器" deviceset="RC0603J" device="" package3d_urn="urn:adsk.eagle:package:38223785/2" technology="10K" value="10k"/>
+<part name="R21" library="FLE_抵抗器" deviceset="RC0603J" device="" package3d_urn="urn:adsk.eagle:package:38223785/2" technology="10K" value="10k"/>
+<part name="R22" library="FLE_抵抗器" deviceset="RC0603J" device="" package3d_urn="urn:adsk.eagle:package:38223785/2" technology="10K" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -2375,16 +2778,16 @@ Source:
 <instance part="SUPPLY12" gate="GND" x="130.81" y="205.74" smashed="yes"/>
 <instance part="SUPPLY13" gate="GND" x="130.81" y="232.41" smashed="yes"/>
 <instance part="R3" gate="G$1" x="123.19" y="245.11" smashed="yes">
-<attribute name="NAME" x="119.38" y="246.6086" size="1.778" layer="95"/>
-<attribute name="VALUE" x="119.38" y="241.808" size="1.778" layer="96"/>
+<attribute name="NAME" x="118.11" y="246.38" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.46" y="246.38" size="1.778" layer="96"/>
 </instance>
 <instance part="C6" gate="G$1" x="115.57" y="241.3" smashed="yes">
 <attribute name="NAME" x="109.22" y="241.3" size="1.778" layer="95"/>
 <attribute name="VALUE" x="109.22" y="236.22" size="1.778" layer="96"/>
 </instance>
 <instance part="R4" gate="G$1" x="123.19" y="218.44" smashed="yes">
-<attribute name="NAME" x="119.38" y="219.9386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="119.38" y="215.138" size="1.778" layer="96"/>
+<attribute name="NAME" x="118.11" y="219.71" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.46" y="219.71" size="1.778" layer="96"/>
 </instance>
 <instance part="C7" gate="G$1" x="115.57" y="214.63" smashed="yes">
 <attribute name="NAME" x="109.22" y="214.63" size="1.778" layer="95"/>
@@ -2544,6 +2947,38 @@ Source:
 <attribute name="VALUE" x="139.192" y="71.12" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SUPPLY36" gate="GND" x="125.73" y="59.69" smashed="yes"/>
+<instance part="R15" gate="G$1" x="123.19" y="250.19" smashed="yes">
+<attribute name="NAME" x="118.11" y="251.46" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.46" y="251.46" size="1.778" layer="96"/>
+</instance>
+<instance part="R16" gate="G$1" x="123.19" y="255.27" smashed="yes">
+<attribute name="NAME" x="118.11" y="256.54" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.46" y="256.54" size="1.778" layer="96"/>
+</instance>
+<instance part="R17" gate="G$1" x="123.19" y="223.52" smashed="yes">
+<attribute name="NAME" x="118.11" y="224.79" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.46" y="224.79" size="1.778" layer="96"/>
+</instance>
+<instance part="R18" gate="G$1" x="123.19" y="228.6" smashed="yes">
+<attribute name="NAME" x="118.11" y="229.87" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.46" y="229.87" size="1.778" layer="96"/>
+</instance>
+<instance part="R19" gate="G$1" x="123.19" y="146.05" smashed="yes">
+<attribute name="NAME" x="118.11" y="147.32" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.46" y="147.32" size="1.778" layer="96"/>
+</instance>
+<instance part="R20" gate="G$1" x="123.19" y="140.97" smashed="yes">
+<attribute name="NAME" x="118.11" y="142.24" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.46" y="142.24" size="1.778" layer="96"/>
+</instance>
+<instance part="R21" gate="G$1" x="123.19" y="119.38" smashed="yes">
+<attribute name="NAME" x="118.11" y="120.65" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.46" y="120.65" size="1.778" layer="96"/>
+</instance>
+<instance part="R22" gate="G$1" x="123.19" y="114.3" smashed="yes">
+<attribute name="NAME" x="118.11" y="115.57" size="1.778" layer="95"/>
+<attribute name="VALUE" x="124.46" y="115.57" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2817,15 +3252,15 @@ Source:
 <net name="N$1" class="0">
 <segment>
 <pinref part="IC1" gate="G1" pin="Y1"/>
-<pinref part="U2" gate="G$1" pin="IN"/>
-<wire x1="101.6" y1="228.6" x2="137.16" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="228.6" x2="118.11" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U2" gate="G$1" pin="INH"/>
 <pinref part="IC1" gate="G1" pin="Y2"/>
-<wire x1="137.16" y1="223.52" x2="101.6" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="118.11" y1="223.52" x2="101.6" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="R17" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -2833,8 +3268,8 @@ Source:
 <pinref part="IC1" gate="G1" pin="Y3"/>
 <wire x1="101.6" y1="218.44" x2="102.87" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="102.87" y1="218.44" x2="102.87" y2="255.27" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="IN"/>
-<wire x1="102.87" y1="255.27" x2="137.16" y2="255.27" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="255.27" x2="118.11" y2="255.27" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -2842,8 +3277,8 @@ Source:
 <pinref part="IC1" gate="G1" pin="Y4"/>
 <wire x1="101.6" y1="213.36" x2="104.14" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="213.36" x2="104.14" y2="250.19" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="INH"/>
-<wire x1="104.14" y1="250.19" x2="137.16" y2="250.19" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="250.19" x2="118.11" y2="250.19" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="IS1_A" class="0">
@@ -3015,34 +3450,34 @@ Source:
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="IN"/>
-<wire x1="101.6" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G2" pin="Y1"/>
+<wire x1="101.6" y1="119.38" x2="118.11" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="R21" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="INH"/>
-<wire x1="137.16" y1="114.3" x2="101.6" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G2" pin="Y2"/>
+<wire x1="118.11" y1="114.3" x2="101.6" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
 <wire x1="101.6" y1="109.22" x2="105.41" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="105.41" y1="109.22" x2="105.41" y2="146.05" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="IN"/>
-<wire x1="105.41" y1="146.05" x2="137.16" y2="146.05" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G2" pin="Y3"/>
+<wire x1="105.41" y1="146.05" x2="118.11" y2="146.05" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <wire x1="101.6" y1="104.14" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="104.14" x2="106.68" y2="140.97" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="INH"/>
-<wire x1="106.68" y1="140.97" x2="137.16" y2="140.97" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G2" pin="Y4"/>
+<wire x1="106.68" y1="140.97" x2="118.11" y2="140.97" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="IS1_A1" class="0">
@@ -3192,6 +3627,62 @@ Source:
 <wire x1="107.95" y1="109.22" x2="115.57" y2="109.22" width="0.1524" layer="91"/>
 <junction x="115.57" y="109.22"/>
 <label x="107.95" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="INH"/>
+<wire x1="128.27" y1="250.19" x2="137.16" y2="250.19" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="IN"/>
+<wire x1="128.27" y1="255.27" x2="137.16" y2="255.27" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="INH"/>
+<wire x1="137.16" y1="223.52" x2="128.27" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="IN"/>
+<wire x1="128.27" y1="228.6" x2="137.16" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="IN"/>
+<wire x1="128.27" y1="146.05" x2="137.16" y2="146.05" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="INH"/>
+<wire x1="128.27" y1="140.97" x2="137.16" y2="140.97" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="IN"/>
+<wire x1="128.27" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="INH"/>
+<wire x1="137.16" y1="114.3" x2="128.27" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
