@@ -1,0 +1,34 @@
+Partlist exported from Z:/GitHub/2022-KawasakiRobot/電子回路設計/電源基盤/電源基盤.sch at 2023/07/12 11:26
+
+Qty Value           Device             Package              Parts                               Description                                    POPULARITY SPICEPREFIX
+1                   B2B-XH-A           B2B-XH-A             A_FAN                               Wire-to-Board 2.5mm pitch top mount connector                        
+4                   B2P-VH             B2P-VH               L_AM_P, R_AM_P, UM_P+, UM_P-        Wire-to-Board 3.96mm pitch top mount connector                       
+2                   B3P-VH             B3P-VH               CN3, CN4                            Wire-to-Board 3.96mm pitch top mount connector                       
+2                   B4B-XH-A           B4B-XH-A             CN1, CN2                            Wire-to-Board 2.5mm pitch top mount connector                        
+1                   PINHD-1X9          1X09                 JP3                                 PIN HEADER                                     13                    
+2                   PINHD-2X8          2X08                 JP1, JP2                            PIN HEADER                                     6                     
+5   0.1u            C-EUC0603          C0603                C1, C2, C3, C9, C17                 CAPACITOR, European symbol                     73         C          
+2   10              R-US_R0603         R0603                R1, R15                             RESISTOR, American symbol                      77         R          
+2   100             R-US_R0603         R0603                R5, R9                              RESISTOR, American symbol                      77         R          
+1   100u            16MH7100MEFC6.3X7  CPOL6.3-7_2.5        C5                                                                                                       
+3   10k             R-US_R0603         R0603                R6, R8, R39                         RESISTOR, American symbol                      77         R          
+2   10u             C2012              C0805                C13, C14                            CAPACITOR, European symbol                     88         C          
+8   1k              R-US_R0603         R0603                R2, R3, R7, R11, R12, R13, R14, R42 RESISTOR, American symbol                      77         R          
+1   3300u           35WXA3300MEFC18X25 D18_L25_P7.5_D1      C4                                                                                                       
+1   4.7k            R-US_R0603         R0603                R10                                 RESISTOR, American symbol                      77         R          
+1   480             R-US_R0603         R0603                R4                                  RESISTOR, American symbol                      77         R          
+1   FDS4935A        FDS4935A           SOIC127P600X250-8N   IC1                                                                                                      
+1   GDZJ5.1ADO-34   GDZJ5.1ADO-34      DIOAD590W50L290D210B D2                                  ツェナーダイオード（５．１Ｖ５００ｍＷ）　ＧＤＺＪ５．１Ａ                                        
+1   IRLML6344TRPBF  IRLML6344TRPBF     SOT95P240X110-3N     T5                                  ＮｃｈＭＯＳＦＥＴ　ＩＲＬＭＬ６３４４ＴＲＰＢＦＴＲ　（１０個入）                                    
+2   NFE31PT         NFE31PT            NFE31                Z1, Z2                              ＥＭＩフィルタ（ムラタエミフィル）ＬＣ複合タイプ２２００ｐＦ（１０個入）                                 
+1   NJM7805FA-I     NJM7805FA-I        TO220                IC2                                 三端子レギュレーター　５Ｖ１．５Ａ　ＮＪＭ７８０５ＦＡ                                          
+4   OSBL1608C1A     OSBL1608C1A        LEDC1608X39N_B       5V, BP, BPS, PL                     青色チップＬＥＤ　［１６０８］　ＯＳＢＬ１６０８　（２０個入）                                      
+1   OSHR1608C1A     OSHR1608C1A        LEDC1608X39N_R       ERR                                 赤色チップＬＥＤ　［１６０８］　ＯＳＨＲ１６０８　（２０個入）                                      
+1   OSTG1608C1A     OSTG1608C1A        LEDC1608X39N_G       PR                                  緑色チップＬＥＤ　［１６０８］　ＯＳＴＧ１６０８Ｃ１Ａ　（２０個入）                                   
+1   SE-5R5-D105VYV  SE-5R5-D105VYV     SE-5R5-D105VYV       C15                                 電気二重層コンデンサー１Ｆ５．５Ｖ（薄型）                                                
+1   SS-12D01-VG4    SS-12D01-VG4       SS-12D01-VG4         SW1                                 基板用スライドスイッチ　ＳＳ－１２Ｄ０１－ＶＧ４                                             
+2   SS2040FL        SS2040FL           SOD-123              D1, D3                              表面実装用ショットキーバリアダイオード（４０Ｖ２Ａ）ＳＳ２０４０ＦＬ（２０個入）                             
+1   TJ60S04M3L      TJ60S04M3L         DPACK                T3                                                                                                       
+3   TLP291          TLP291             SOIC127P700X210-4N   T1, T2, T4                          フォトカプラ　赤外ＬＥＤ＋フォトトランジスタ　ＴＬＰ２９１（ＧＢ）　（１０個入）                             
+1   TS-0606-F-N-BLK TS-0606-F-N-BLK    TS-0606-F-N          HOME                                タクトスイッチ（黒色）                                                          
+1   UGCM1205XP      UGCM1205XP         UGCM1205XP           BZ1                                                                                                      
