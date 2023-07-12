@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -220,18 +220,14 @@
 <polygon width="0.2" layer="30">
 <vertex x="36" y="4.25"/>
 <vertex x="70.5" y="4.25"/>
-<vertex x="72" y="5.75"/>
 <vertex x="78.5" y="12.25"/>
-<vertex x="78.5" y="13.25"/>
-<vertex x="78.5" y="25.25"/>
-<vertex x="72" y="31.75"/>
-<vertex x="71" y="31.75"/>
+<vertex x="78.5" y="23.25"/>
+<vertex x="70" y="31.75"/>
 <vertex x="36" y="31.75" curve="-90"/>
 <vertex x="34.75" y="33" curve="-90"/>
 <vertex x="36" y="34.25"/>
-<vertex x="73.5" y="34.25"/>
-<vertex x="81" y="26.75"/>
-<vertex x="81" y="23.25"/>
+<vertex x="72.5" y="34.25"/>
+<vertex x="81" y="25.75"/>
 <vertex x="81" y="10.75"/>
 <vertex x="72" y="1.75"/>
 <vertex x="36" y="1.75" curve="-90"/>
@@ -252,9 +248,9 @@
 <vertex x="120.25" y="23.5"/>
 <vertex x="116.25" y="19.5"/>
 </polygon>
-<wire x1="36" y1="31.3" x2="71.8" y2="31.3" width="0.6" layer="42"/>
-<wire x1="71.8" y1="31.3" x2="78.1" y2="25" width="0.6" layer="42"/>
-<wire x1="78.1" y1="25" x2="78.1" y2="12.5" width="0.6" layer="42"/>
+<wire x1="36" y1="31.3" x2="69.8" y2="31.3" width="0.6" layer="42"/>
+<wire x1="69.8" y1="31.3" x2="78.1" y2="23" width="0.6" layer="42"/>
+<wire x1="78.1" y1="23" x2="78.1" y2="12.5" width="0.6" layer="42"/>
 <wire x1="78.1" y1="12.5" x2="70.3" y2="4.7" width="0.6" layer="42"/>
 <wire x1="70.3" y1="4.7" x2="36" y2="4.7" width="0.6" layer="42"/>
 <wire x1="36" y1="4.7" x2="34.3" y2="3" width="0.6" layer="42" curve="90"/>
@@ -279,9 +275,9 @@
 <wire x1="96.6" y1="23.3" x2="93.3" y2="23.3" width="0.6" layer="42"/>
 <wire x1="93.3" y1="23.3" x2="92.4" y2="22.4" width="0.6" layer="42"/>
 <wire x1="92.4" y1="22.4" x2="81.4" y2="22.4" width="0.6" layer="42"/>
-<wire x1="81.4" y1="22.4" x2="81.4" y2="27" width="0.6" layer="42"/>
-<wire x1="81.4" y1="27" x2="73.7" y2="34.7" width="0.6" layer="42"/>
-<wire x1="73.7" y1="34.7" x2="36" y2="34.7" width="0.6" layer="42"/>
+<wire x1="81.4" y1="22.4" x2="81.4" y2="26" width="0.6" layer="42"/>
+<wire x1="81.4" y1="26" x2="72.7" y2="34.7" width="0.6" layer="42"/>
+<wire x1="72.7" y1="34.7" x2="36" y2="34.7" width="0.6" layer="42"/>
 <wire x1="36" y1="34.7" x2="34.3" y2="33" width="0.6" layer="42" curve="90"/>
 <wire x1="34.3" y1="33" x2="36" y2="31.3" width="0.6" layer="42" curve="90"/>
 <wire x1="34.3" y1="5.3" x2="34.3" y2="8.7" width="0.6" layer="42"/>
@@ -3039,18 +3035,14 @@ design rules under a new name.</description>
 <polygon width="0.2" layer="16" thermals="no">
 <vertex x="36" y="4.25"/>
 <vertex x="70.5" y="4.25"/>
-<vertex x="72" y="5.75"/>
 <vertex x="78.5" y="12.25"/>
-<vertex x="78.5" y="13.25"/>
-<vertex x="78.5" y="25.25"/>
-<vertex x="72" y="31.75"/>
-<vertex x="71" y="31.75"/>
+<vertex x="78.5" y="23.25"/>
+<vertex x="70" y="31.75"/>
 <vertex x="36" y="31.75" curve="-90"/>
 <vertex x="34.75" y="33" curve="-90"/>
 <vertex x="36" y="34.25"/>
-<vertex x="73.5" y="34.25"/>
-<vertex x="81" y="26.75"/>
-<vertex x="81" y="23.25"/>
+<vertex x="72.5" y="34.25"/>
+<vertex x="81" y="25.75"/>
 <vertex x="81" y="10.75"/>
 <vertex x="72" y="1.75"/>
 <vertex x="36" y="1.75" curve="-90"/>

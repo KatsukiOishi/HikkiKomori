@@ -2051,11 +2051,11 @@ design rules under a new name.</description>
 <wire x1="1.6" y1="-3.4" x2="2.0872" y2="-3.8872" width="0.2032" layer="16"/>
 <wire x1="2.0872" y1="-3.8872" x2="2.0872" y2="-5.4872" width="0.2032" layer="16"/>
 <wire x1="2.0872" y1="-5.4872" x2="5.708" y2="-9.108" width="0.2032" layer="16"/>
-<wire x1="10.8" y1="4.4" x2="10.2" y2="5" width="0.2032" layer="16"/>
+<wire x1="10.7" y1="4.5" x2="10.2" y2="5" width="0.2032" layer="16"/>
 <wire x1="10.2" y1="5" x2="9" y2="5" width="0.2032" layer="16"/>
 <wire x1="5.708" y1="-9.108" x2="10.092" y2="-9.108" width="0.2032" layer="16"/>
-<wire x1="10.092" y1="-9.108" x2="10.8" y2="-8.4" width="0.2032" layer="16"/>
-<wire x1="10.8" y1="-8.4" x2="10.8" y2="4.4" width="0.2032" layer="16"/>
+<wire x1="10.092" y1="-9.108" x2="10.7" y2="-8.5" width="0.2032" layer="16"/>
+<wire x1="10.7" y1="-8.5" x2="10.7" y2="4.5" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$12">
 <contactref element="U1" pad="IN"/>
@@ -2084,15 +2084,16 @@ design rules under a new name.</description>
 <wire x1="3.2" y1="1.6" x2="3.2" y2="-2.6" width="0.2032" layer="16"/>
 <wire x1="3.2" y1="-2.6" x2="2.4936" y2="-3.3064" width="0.2032" layer="16"/>
 <wire x1="2.4936" y1="-3.3064" x2="2.4936" y2="-5.2936" width="0.2032" layer="16"/>
-<wire x1="9.86635" y1="-8.7016" x2="10.3516" y2="-8.21635" width="0.2032" layer="16"/>
-<wire x1="10.3516" y1="-6.03365" x2="10.11635" y2="-5.7984" width="0.2032" layer="16"/>
-<wire x1="10.3516" y1="-8.21635" x2="10.3516" y2="-6.03365" width="0.2032" layer="16"/>
+<wire x1="9.81635" y1="-8.7016" x2="10.2516" y2="-8.26635" width="0.2032" layer="16"/>
+<wire x1="10.2516" y1="-6.28365" x2="9.81635" y2="-5.8484" width="0.2032" layer="16"/>
+<wire x1="10.2516" y1="-8.26635" x2="10.2516" y2="-6.28365" width="0.2032" layer="16"/>
 <wire x1="2.4936" y1="-5.2936" x2="5.9016" y2="-8.7016" width="0.2032" layer="16"/>
-<wire x1="5.9016" y1="-8.7016" x2="9.86635" y2="-8.7016" width="0.2032" layer="16"/>
-<wire x1="10.11635" y1="-5.7984" x2="9.1" y2="-5.7984" width="0.2032" layer="16"/>
+<wire x1="5.9016" y1="-8.7016" x2="9.81635" y2="-8.7016" width="0.2032" layer="16"/>
+<wire x1="9.81635" y1="-5.8484" x2="9.05" y2="-5.8484" width="0.2032" layer="16"/>
 <wire x1="9.1" y1="-5.7984" x2="8.4" y2="-5.7984" width="0.2032" layer="16"/>
 <wire x1="9" y1="-5.9" x2="9" y2="-5.8984" width="0.2032" layer="16"/>
-<wire x1="9" y1="-5.8984" x2="9.1" y2="-5.7984" width="0.2032" layer="16"/>
+<wire x1="9" y1="-5.8984" x2="9.05" y2="-5.8484" width="0.2032" layer="16"/>
+<wire x1="9.05" y1="-5.8484" x2="9.1" y2="-5.7984" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$14">
 <contactref element="U2" pad="INH"/>
@@ -2400,6 +2401,34 @@ design rules under a new name.</description>
 <approved hash="7,40,dcbca6f85113acee"/>
 <approved hash="7,40,74dacfa945e391e0"/>
 <approved hash="7,40,f52901254a78c02b"/>
+<approved hash="4,2,7926d1dd5b12adb0"/>
+<approved hash="4,2,239844341c668f6d"/>
+<approved hash="4,3,239844341c668f6d"/>
+<approved hash="4,3,7926d1dd5b12adb0"/>
+<approved hash="4,4,239844341c668f6d"/>
+<approved hash="4,4,7926d1dd5b12adb0"/>
+<approved hash="4,5,239844341c668f6d"/>
+<approved hash="4,5,7926d1dd5b12adb0"/>
+<approved hash="4,6,239844341c668f6d"/>
+<approved hash="4,6,7926d1dd5b12adb0"/>
+<approved hash="4,7,239844341c668f6d"/>
+<approved hash="4,7,7926d1dd5b12adb0"/>
+<approved hash="4,8,239844341c668f6d"/>
+<approved hash="4,8,7926d1dd5b12adb0"/>
+<approved hash="4,9,239844341c668f6d"/>
+<approved hash="4,9,7926d1dd5b12adb0"/>
+<approved hash="4,10,239844341c668f6d"/>
+<approved hash="4,10,7926d1dd5b12adb0"/>
+<approved hash="4,11,239844341c668f6d"/>
+<approved hash="4,11,7926d1dd5b12adb0"/>
+<approved hash="4,12,239844341c668f6d"/>
+<approved hash="4,12,7926d1dd5b12adb0"/>
+<approved hash="4,13,239844341c668f6d"/>
+<approved hash="4,13,7926d1dd5b12adb0"/>
+<approved hash="4,14,239844341c668f6d"/>
+<approved hash="4,14,7926d1dd5b12adb0"/>
+<approved hash="4,15,239844341c668f6d"/>
+<approved hash="4,15,7926d1dd5b12adb0"/>
 </errors>
 </board>
 </drawing>

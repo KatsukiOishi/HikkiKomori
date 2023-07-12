@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -226,8 +226,8 @@
 <vertex x="36" y="31.75" curve="-90"/>
 <vertex x="34.75" y="33" curve="-90"/>
 <vertex x="36" y="34.25"/>
-<vertex x="72.5" y="34.25"/>
-<vertex x="81" y="25.75"/>
+<vertex x="71.5" y="34.25"/>
+<vertex x="81" y="24.75"/>
 <vertex x="81" y="10.75"/>
 <vertex x="72" y="1.75"/>
 <vertex x="36" y="1.75" curve="-90"/>
@@ -275,9 +275,9 @@
 <wire x1="96.6" y1="23.3" x2="93.3" y2="23.3" width="0.6" layer="42"/>
 <wire x1="93.3" y1="23.3" x2="92.4" y2="22.4" width="0.6" layer="42"/>
 <wire x1="92.4" y1="22.4" x2="81.4" y2="22.4" width="0.6" layer="42"/>
-<wire x1="81.4" y1="22.4" x2="81.4" y2="26" width="0.6" layer="42"/>
-<wire x1="81.4" y1="26" x2="72.7" y2="34.7" width="0.6" layer="42"/>
-<wire x1="72.7" y1="34.7" x2="36" y2="34.7" width="0.6" layer="42"/>
+<wire x1="81.4" y1="22.4" x2="81.4" y2="25" width="0.6" layer="42"/>
+<wire x1="81.4" y1="25" x2="71.7" y2="34.7" width="0.6" layer="42"/>
+<wire x1="71.7" y1="34.7" x2="36" y2="34.7" width="0.6" layer="42"/>
 <wire x1="36" y1="34.7" x2="34.3" y2="33" width="0.6" layer="42" curve="90"/>
 <wire x1="34.3" y1="33" x2="36" y2="31.3" width="0.6" layer="42" curve="90"/>
 <wire x1="34.3" y1="5.3" x2="34.3" y2="8.7" width="0.6" layer="42"/>
@@ -380,8 +380,10 @@
 <text x="170" y="10.5" size="0.8128" layer="21" rot="R180" align="center-left">LS2</text>
 <text x="170" y="8" size="0.8128" layer="21" rot="R180" align="center-left">GND</text>
 <text x="170" y="28" size="0.8128" layer="21" rot="R180" align="center-left">5V</text>
-<hole x="85" y="25" drill="2.1"/>
-<hole x="85" y="11" drill="2.1"/>
+<hole x="77" y="34" drill="2.1"/>
+<hole x="77" y="2" drill="2.1"/>
+<circle x="77" y="34" radius="2" width="0.2" layer="21"/>
+<circle x="77" y="2" radius="2" width="0.2" layer="21"/>
 </plain>
 <libraries>
 <library name="正三端子レギュレータ">
@@ -3041,8 +3043,8 @@ design rules under a new name.</description>
 <vertex x="36" y="31.75" curve="-90"/>
 <vertex x="34.75" y="33" curve="-90"/>
 <vertex x="36" y="34.25"/>
-<vertex x="72.5" y="34.25"/>
-<vertex x="81" y="25.75"/>
+<vertex x="71.5" y="34.25"/>
+<vertex x="81" y="24.75"/>
 <vertex x="81" y="10.75"/>
 <vertex x="72" y="1.75"/>
 <vertex x="36" y="1.75" curve="-90"/>

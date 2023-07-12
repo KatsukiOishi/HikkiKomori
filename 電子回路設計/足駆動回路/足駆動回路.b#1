@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -72,7 +72,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyY2NlZGVl" projecturn="a.cGVyc29uYWw6dWUyY2NlZGVlIzIwMjExMDIwNDU3NjI1ODc2" f3durn="urn:adsk.wipprod:dm.lineage:TEBGK38nRHKo_10KvwLmlQ" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="741de552-ae3d-4941-b2be-62375bb9d898" lastsyncedrevisionid="741de552-ae3d-4941-b2be-62375bb9d898" lastboardhashguid="189327fe-1682-5fe5-d111-4a7f39339f39" lastpushedtime="2022-06-13T08:45:51Z" linktopcb3d="true"/>
+<fusionsync huburn="a.YnVzaW5lc3M6MTFiaWdzdG9uZTE" projecturn="a.YnVzaW5lc3M6MTFiaWdzdG9uZTEjMjAyMzA0MTQ2MzA0MzgwMzE" f3durn="urn:adsk.wipprod:dm.lineage:Bg-MxRAbSdOYoYSgc2-JMA" pcbguid="144be031-0638-435b-a34c-0f17c5d598f9" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="451f3918-48fa-4799-bfe6-95b5e16cd4b3" lastsyncedrevisionid="451f3918-48fa-4799-bfe6-95b5e16cd4b3" lastboardhashguid="0ff0fcd1-aa0d-571a-64ff-7686d0eaa3f4" lastpushedtime="2023-07-12T04:37:25Z" linktopcb3d="true"/>
 <plain>
 <polygon width="0.15" layer="29">
 <vertex x="37.3" y="8.1"/>

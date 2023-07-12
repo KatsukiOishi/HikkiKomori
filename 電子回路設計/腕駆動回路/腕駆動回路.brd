@@ -94,11 +94,11 @@
 <layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bPlace" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
@@ -540,6 +540,34 @@
 <circle x="17" y="-18" radius="2" width="0.1524" layer="21"/>
 <hole x="5" y="-18" drill="2.1"/>
 <hole x="17" y="-18" drill="2.1"/>
+<text x="9.070009375" y="6.230009375" size="1.27" layer="125" rot="R180">C1</text>
+<text x="8.970009375" y="-4.06999375" size="1.27" layer="125" rot="R180">C2</text>
+<text x="-12" y="-2.49999375" size="1.27" layer="126" rot="MR0">C3</text>
+<text x="-5.9999875" y="0" size="1.27" layer="125">C4</text>
+<text x="-10.500003125" y="1.999996875" size="1.27" layer="125">C5</text>
+<text x="-3.49999375" y="-7.500009375" size="1.27" layer="125">C6</text>
+<text x="-10.500003125" y="-9.00000625" size="1.27" layer="125">C7</text>
+<text x="-5.9999875" y="-10.00000625" size="1.016" layer="122" rot="MR180">C8</text>
+<text x="-13" y="-18.4999875" size="1.27" layer="126" rot="MR0">C9</text>
+<text x="-12.5" y="-12" size="1.27" layer="126" rot="MR0">C10</text>
+<text x="-8.500009375" y="-20.000009375" size="1.27" layer="125" ratio="10">CN1</text>
+<text x="-18.4999875" y="2.99999375" size="1.27" layer="126" ratio="10" rot="MR90">CN2</text>
+<text x="-18.9999875" y="-8.000009375" size="1.27" layer="125" ratio="10">CN3</text>
+<text x="-20.000009375" y="11.500003125" size="0.8128" layer="125" rot="R90" align="bottom-center">EN1</text>
+<text x="-10.500003125" y="2.49999375" size="1.27" layer="122" rot="MR90">IC1</text>
+<text x="-22.00000625" y="12.5" size="0.8128" layer="125" rot="R90" align="bottom-center">LPWM1</text>
+<text x="-5.9999875" y="1.499996875" size="1.27" layer="125">R1</text>
+<text x="-10.500003125" y="3.49999375" size="1.27" layer="125">R2</text>
+<text x="-3.49999375" y="-5.4999875" size="1.27" layer="125">R3</text>
+<text x="-10.500003125" y="-7.500009375" size="1.27" layer="125">R4</text>
+<text x="-21.86500625" y="7.865009375" size="1.27" layer="126" rot="MR90">R5</text>
+<text x="-19.865009375" y="7.865009375" size="1.27" layer="126" rot="MR90">R6</text>
+<text x="-23.865003125" y="7.865009375" size="1.27" layer="126" rot="MR90">R7</text>
+<text x="-3.39999375" y="-4.150003125" size="0.8128" layer="126" rot="MR180" align="bottom-center">R8</text>
+<text x="-3.39999375" y="-6.35" size="0.8128" layer="126" rot="MR180" align="bottom-center">R9</text>
+<text x="-3.39999375" y="3.69999375" size="0.8128" layer="126" rot="MR180" align="bottom-center">R10</text>
+<text x="-3.39999375" y="5.95" size="0.8128" layer="126" rot="MR180" align="bottom-center">R11</text>
+<text x="-24.000003125" y="12.5" size="0.8128" layer="125" rot="R90" align="bottom-center">RPWM1</text>
 </plain>
 <libraries>
 <library name="RCL">

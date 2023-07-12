@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="10" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -93,12 +93,12 @@
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bPlace" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
@@ -385,6 +385,66 @@
 <circle x="77" y="16" radius="2" width="0.2" layer="21"/>
 <circle x="77" y="-16" radius="2" width="0.2" layer="21"/>
 <hole x="148.5" y="0" drill="3.2"/>
+<text x="4.999990625" y="-5.9999875" size="1.27" layer="125" rot="R180" align="bottom-center">5V</text>
+<text x="23.500003125" y="-16.699990625" size="1.27" layer="125" ratio="10" rot="R90">A_FAN</text>
+<text x="4.999990625" y="-8.500009375" size="1.27" layer="125" rot="R180" align="bottom-center">BP</text>
+<text x="4.999990625" y="-3.49999375" size="1.27" layer="125" rot="R180" align="bottom-center">BPS</text>
+<text x="13.599996875" y="-7.700009375" size="1.016" layer="125" rot="R270">BZ1</text>
+<text x="45.500009375" y="12.5" size="1.27" layer="125" rot="R90">C1</text>
+<text x="43.634990625" y="-12.365" size="1.27" layer="125" rot="R270">C2</text>
+<text x="114.135003125" y="-5.8650125" size="1.27" layer="125" rot="R270">C3</text>
+<text x="85.00000625" y="-4.499990625" size="1.778" layer="125" rot="R90">C4</text>
+<text x="4.999990625" y="-13" size="1.016" layer="121" rot="R270">C5</text>
+<text x="7.1000125" y="2.199996875" size="1.27" layer="125" rot="R90">C9</text>
+<text x="71.249996875" y="-7.1000125" size="1.27" layer="125" rot="R90">C13</text>
+<text x="71.249996875" y="4.250003125" size="1.27" layer="125" rot="R90">C14</text>
+<text x="40.134996875" y="-6.5000125" size="1.27" layer="125" rot="R270" align="bottom-center">C15</text>
+<text x="68.134990625" y="-5.634990625" size="1.27" layer="125" rot="R180">C17</text>
+<text x="143.799990625" y="-10.500003125" size="1.27" layer="125" ratio="10">CN1</text>
+<text x="156.19999375" y="11.500003125" size="1.27" layer="125" ratio="10" rot="R180">CN2</text>
+<text x="127.999996875" y="-14.499996875" size="1.27" layer="125" ratio="10" rot="R180">CN3</text>
+<text x="127.999996875" y="4.499990625" size="1.27" layer="125" ratio="10" rot="R180">CN4</text>
+<text x="41.48490625" y="2.49999375" size="1.27" layer="125" rot="R270" align="bottom-center">D1</text>
+<text x="11.000003125" y="15.99999375" size="1.27" layer="125" rot="R180" align="bottom-center">D2</text>
+<text x="43.9849" y="2.49999375" size="1.27" layer="125" rot="R270" align="bottom-center">D3</text>
+<text x="4.999990625" y="-0.999996875" size="1.27" layer="125" rot="R180" align="bottom-center">ERR</text>
+<text x="164.000003125" y="-5.9999875" size="1.27" layer="122" rot="MR0">HOME</text>
+<text x="15.99999375" y="3.43009375" size="1.27" layer="125" rot="R180" align="bottom-center">IC1</text>
+<text x="55.79300625" y="-3.81" size="1.778" layer="125" ratio="10" rot="R90">IC2</text>
+<text x="79.839996875" y="16.175" size="1.27" layer="125" ratio="10">JP1</text>
+<text x="79.839996875" y="-9.825" size="1.27" layer="125" ratio="10">JP2</text>
+<text x="169.999990625" y="12" size="1.27" layer="125" ratio="10">JP3</text>
+<text x="31.4999875" y="10.00000625" size="1.27" layer="125" ratio="10" rot="R90">L_AM_P</text>
+<text x="163.40490625" y="0" size="1.27" layer="126" rot="MR90" align="bottom-center">PL</text>
+<text x="5.4999875" y="1.499996875" size="1.27" layer="125" rot="R180" align="bottom-center">PR</text>
+<text x="37.1149875" y="2.61500625" size="1.27" layer="125" rot="R90">R1</text>
+<text x="13" y="-9.50000625" size="1.27" layer="126" rot="MR0">R2</text>
+<text x="13" y="-7.0000125" size="1.27" layer="126" rot="MR0">R3</text>
+<text x="156.63499375" y="3.364990625" size="1.27" layer="125" rot="R180">R4</text>
+<text x="32.5000125" y="7.2000125" size="1.27" layer="125" rot="R270">R5</text>
+<text x="147.500009375" y="8.500009375" size="1.27" layer="125">R6</text>
+<text x="159.1349875" y="0.635" size="1.27" layer="126" rot="MR0">R7</text>
+<text x="21.000009375" y="10.500003125" size="1.27" layer="125">R8</text>
+<text x="27.499996875" y="12.5" size="1.27" layer="125">R9</text>
+<text x="7.500009375" y="12.5" size="1.27" layer="125">R10</text>
+<text x="11.500003125" y="12.5" size="1.27" layer="125">R11</text>
+<text x="13" y="0.5" size="1.27" layer="126" rot="MR0">R12</text>
+<text x="13" y="-1.999996875" size="1.27" layer="126" rot="MR0">R13</text>
+<text x="29.73499375" y="-8.035009375" size="1.27" layer="125" rot="R180">R14</text>
+<text x="28.46499375" y="-8.86500625" size="1.27" layer="125">R15</text>
+<text x="20.86500625" y="2.634996875" size="1.27" layer="125">R39</text>
+<text x="13" y="-4.499990625" size="1.27" layer="126" rot="MR0">R42</text>
+<text x="40.49999375" y="-10.00000625" size="1.27" layer="125" ratio="10" rot="R270">R_AM_P</text>
+<text x="157.9999875" y="2.99999375" size="1.27" layer="126" rot="MR90">SW1</text>
+<text x="26" y="5.4999875" size="1.27" layer="125" align="bottom-center">T1</text>
+<text x="153.999996875" y="8.500009375" size="1.27" layer="125" align="bottom-center">T2</text>
+<text x="139.5" y="2.49999375" size="1.016" layer="125" rot="R270">T3</text>
+<text x="26" y="8.29990625" size="1.27" layer="125" align="bottom-center">T4</text>
+<text x="25.9" y="-11.4435875" size="1.27" layer="125" rot="R180" align="bottom-center">T5</text>
+<text x="111.00000625" y="-14.499996875" size="1.27" layer="125" ratio="10" rot="R180">UM_P+</text>
+<text x="111.00000625" y="4.499990625" size="1.27" layer="125" ratio="10" rot="R180">UM_P-</text>
+<text x="7.0000125" y="8.000009375" size="1.016" layer="125" ratio="18" rot="R90">Z1</text>
+<text x="7.0000125" y="4.999990625" size="1.016" layer="125" ratio="18" rot="R90">Z2</text>
 </plain>
 <libraries>
 <library name="正三端子レギュレータ">
@@ -2603,11 +2663,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="41.4849" y="2.5" size="1.27" layer="25" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="38.5151" y="2.5" size="1.27" layer="27" rot="R270" align="top-center"/>
 </element>
-<element name="C9" library="rcl" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u" x="9" y="3" smashed="yes">
-<attribute name="NAME" x="7.1" y="2.1" size="1.27" layer="25" rot="R90"/>
-<attribute name="POPULARITY" value="73" x="-279" y="31" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="-279" y="31" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="8.365" y="1.095" size="1.27" layer="27"/>
+<element name="C9" library="rcl" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1u" x="9" y="3.1" smashed="yes">
+<attribute name="NAME" x="7.1" y="2.2" size="1.27" layer="25" rot="R90"/>
+<attribute name="POPULARITY" value="73" x="-279" y="31.1" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="-279" y="31.1" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="8.365" y="1.195" size="1.27" layer="27"/>
 </element>
 <element name="Z2" library="EMIフィルタ" package="NFE31" package3d_urn="urn:adsk.eagle:package:29147495/2" value="NFE31PT" x="9.6" y="5.7" smashed="yes" rot="R180">
 <attribute name="NAME" x="7" y="5" size="1.016" layer="25" ratio="18" rot="R90"/>
