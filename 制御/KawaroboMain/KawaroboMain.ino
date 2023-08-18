@@ -1,4 +1,5 @@
 #include "pindefine.h"
+#include "MotorDrive.hpp"
 
 static unsigned long time_count[4],time_base,time_buf;
 static unsigned int res[4];
@@ -7,31 +8,28 @@ static bool sig_flug[4],sigloop_flag;
 
 volatile uint8_t *resport = &PIND;
 
-void GPIO_Init(){
-  pinMode(LS1 ,INPUT_PULLUP);
-  pinMode(LS2 ,INPUT_PULLUP);
-  pinMode(HOME_SW ,INPUT_PULLUP);
+void GPIO_Init();
 
-  pinMode(A_EN  ,OUTPUT);
-  pinMode(A_DIR ,OUTPUT);
-  pinMode(A_PWM ,OUTPUT);
-  pinMode(RL_EN ,OUTPUT);
-  pinMode(RL_DIR,OUTPUT);
-  pinMode(RL_PWM,OUTPUT);
-  pinMode(RR_EN ,OUTPUT);
-  pinMode(RR_DIR,OUTPUT);
-  pinMode(RR_PWM,OUTPUT);
+MD::MD(uint8_t en_pin,
+       uint8_t dir_pin,
+       uint8_t pwm_pin,
+       uint8_t is1,
+       uint8_t is2){
 
-  digitalWrite(A_EN  ,LOW);
-  digitalWrite(A_DIR ,LOW);
-  digitalWrite(A_PWM ,LOW);
-  digitalWrite(RL_EN ,LOW);
-  digitalWrite(RL_DIR,LOW);
-  digitalWrite(RL_PWM,LOW);
-  digitalWrite(RR_EN ,LOW);
-  digitalWrite(RR_DIR,LOW);
-  digitalWrite(RR_PWM,LOW);
+  _en_pin  = en_pin;
+  _dir_pin = dir_pin;
+  _pwm_pin = pwm_pin;
+  _is1 = is1;
+  _is2 = is2;
+
+  pinMode(_en_pin,OUTPUT);
+  pinMode(_dir_pin,OUTPUT);
+  pinMode(_pwm_pin,OUTPUT);
+
 }
+
+void MD::DriverEnable() {digitalWrite(_en_pin,HIGH);}
+void MD::DriverDisable(){digitalWrite(_en_pin,LOW);}
 
 void setup(){
   GPIO_Init();
@@ -82,4 +80,30 @@ void allvalReset(){
 	time_base=0;
 	time_buf=0;
 	sigloop_flag=false;
+}
+
+void GPIO_Init(){
+  pinMode(LS1 ,INPUT_PULLUP);
+  pinMode(LS2 ,INPUT_PULLUP);
+  pinMode(HOME_SW ,INPUT_PULLUP);
+
+  pinMode(A_EN  ,OUTPUT);
+  pinMode(A_DIR ,OUTPUT);
+  pinMode(A_PWM ,OUTPUT);
+  pinMode(RL_EN ,OUTPUT);
+  pinMode(RL_DIR,OUTPUT);
+  pinMode(RL_PWM,OUTPUT);
+  pinMode(RR_EN ,OUTPUT);
+  pinMode(RR_DIR,OUTPUT);
+  pinMode(RR_PWM,OUTPUT);
+
+  digitalWrite(A_EN  ,LOW);
+  digitalWrite(A_DIR ,LOW);
+  digitalWrite(A_PWM ,LOW);
+  digitalWrite(RL_EN ,LOW);
+  digitalWrite(RL_DIR,LOW);
+  digitalWrite(RL_PWM,LOW);
+  digitalWrite(RR_EN ,LOW);
+  digitalWrite(RR_DIR,LOW);
+  digitalWrite(RR_PWM,LOW);
 }
