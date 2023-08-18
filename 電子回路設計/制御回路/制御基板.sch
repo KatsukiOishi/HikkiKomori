@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -3962,8 +3962,8 @@ grid 2.5 mm, outline 2.5 x 5 mm</description>
 <wire x1="226.1362" y1="209.55" x2="241.3" y2="209.55" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="139.7" y1="116.84" x2="153.67" y2="116.84" width="0.1524" layer="91"/>
-<label x="146.05" y="116.84" size="1.778" layer="95"/>
+<wire x1="139.7" y1="116.84" x2="154.94" y2="116.84" width="0.1524" layer="91"/>
+<label x="147.32" y="116.84" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="(ADC0)PF0"/>
 </segment>
 </net>
@@ -3974,8 +3974,8 @@ grid 2.5 mm, outline 2.5 x 5 mm</description>
 <wire x1="226.1362" y1="207.01" x2="241.3" y2="207.01" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="139.7" y1="119.38" x2="153.67" y2="119.38" width="0.1524" layer="91"/>
-<label x="146.05" y="119.38" size="1.778" layer="95"/>
+<wire x1="139.7" y1="119.38" x2="154.94" y2="119.38" width="0.1524" layer="91"/>
+<label x="147.32" y="119.38" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="(ADC1)PF1"/>
 </segment>
 </net>
@@ -4041,8 +4041,8 @@ grid 2.5 mm, outline 2.5 x 5 mm</description>
 </net>
 <net name="RR_IS1" class="0">
 <segment>
-<wire x1="139.7" y1="121.92" x2="153.67" y2="121.92" width="0.1524" layer="91"/>
-<label x="146.05" y="121.92" size="1.778" layer="95"/>
+<wire x1="139.7" y1="121.92" x2="154.94" y2="121.92" width="0.1524" layer="91"/>
+<label x="147.32" y="121.92" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="(ADC2)PF2"/>
 </segment>
 <segment>
@@ -4053,8 +4053,8 @@ grid 2.5 mm, outline 2.5 x 5 mm</description>
 </net>
 <net name="RR_IS2" class="0">
 <segment>
-<wire x1="139.7" y1="124.46" x2="153.67" y2="124.46" width="0.1524" layer="91"/>
-<label x="146.05" y="124.46" size="1.778" layer="95"/>
+<wire x1="139.7" y1="124.46" x2="154.94" y2="124.46" width="0.1524" layer="91"/>
+<label x="147.32" y="124.46" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="(ADC3)PF3"/>
 </segment>
 <segment>
@@ -4070,8 +4070,8 @@ grid 2.5 mm, outline 2.5 x 5 mm</description>
 <label x="231.14" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="139.7" y1="129.54" x2="153.67" y2="129.54" width="0.1524" layer="91"/>
-<label x="146.05" y="129.54" size="1.778" layer="95"/>
+<wire x1="139.7" y1="129.54" x2="154.94" y2="129.54" width="0.1524" layer="91"/>
+<label x="147.32" y="129.54" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="(ADC5/TMS)PF5"/>
 </segment>
 </net>
@@ -4082,8 +4082,8 @@ grid 2.5 mm, outline 2.5 x 5 mm</description>
 <label x="231.14" y="152.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="139.7" y1="127" x2="153.67" y2="127" width="0.1524" layer="91"/>
-<label x="146.05" y="127" size="1.778" layer="95"/>
+<wire x1="139.7" y1="127" x2="154.94" y2="127" width="0.1524" layer="91"/>
+<label x="147.32" y="127" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="(ADC4/TCK)PF4"/>
 </segment>
 </net>
