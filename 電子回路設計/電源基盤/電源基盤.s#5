@@ -11585,13 +11585,13 @@ GDZJシリーズ PDFデータシート
 <attribute name="NAME" x="203.2" y="145.415" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="203.2" y="119.38" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="JP3" gate="A" x="219.71" y="162.56" smashed="yes">
-<attribute name="NAME" x="213.36" y="175.895" size="1.778" layer="95"/>
-<attribute name="VALUE" x="213.36" y="147.32" size="1.778" layer="96"/>
+<instance part="JP3" gate="A" x="162.56" y="162.56" smashed="yes" rot="MR0">
+<attribute name="NAME" x="168.91" y="175.895" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="168.91" y="147.32" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="SUPPLY30" gate="GND" x="210.82" y="147.32" smashed="yes" rot="MR0"/>
-<instance part="SUPPLY31" gate="+5V" x="210.82" y="177.8" smashed="yes">
-<attribute name="VALUE" x="208.915" y="180.975" size="1.778" layer="96"/>
+<instance part="SUPPLY30" gate="GND" x="171.45" y="147.32" smashed="yes"/>
+<instance part="SUPPLY31" gate="+5V" x="171.45" y="177.8" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="173.355" y="180.975" size="1.778" layer="96" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -11839,8 +11839,8 @@ GDZJシリーズ PDFデータシート
 <segment>
 <pinref part="JP3" gate="A" pin="9"/>
 <pinref part="SUPPLY30" gate="GND" pin="GND"/>
-<wire x1="217.17" y1="152.4" x2="210.82" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="152.4" x2="210.82" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="152.4" x2="171.45" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="171.45" y1="152.4" x2="171.45" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -11893,8 +11893,8 @@ GDZJシリーズ PDFデータシート
 <segment>
 <pinref part="SUPPLY31" gate="+5V" pin="+5V"/>
 <pinref part="JP3" gate="A" pin="1"/>
-<wire x1="210.82" y1="175.26" x2="210.82" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="172.72" x2="217.17" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="171.45" y1="175.26" x2="171.45" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="171.45" y1="172.72" x2="165.1" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BPS_OR" class="1">

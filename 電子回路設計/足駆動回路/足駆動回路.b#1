@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -70,9 +70,12 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="121" name="_tPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="5" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6MTFiaWdzdG9uZTE" projecturn="a.YnVzaW5lc3M6MTFiaWdzdG9uZTEjMjAyMzA0MTQ2MzA0MzgwMzE" f3durn="urn:adsk.wipprod:dm.lineage:Bg-MxRAbSdOYoYSgc2-JMA" pcbguid="144be031-0638-435b-a34c-0f17c5d598f9" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="451f3918-48fa-4799-bfe6-95b5e16cd4b3" lastsyncedrevisionid="451f3918-48fa-4799-bfe6-95b5e16cd4b3" lastboardhashguid="0ff0fcd1-aa0d-571a-64ff-7686d0eaa3f4" lastpushedtime="2023-07-12T04:37:25Z" linktopcb3d="true"/>
+<fusionsync huburn="a.YnVzaW5lc3M6MTFiaWdzdG9uZTE" projecturn="a.YnVzaW5lc3M6MTFiaWdzdG9uZTEjMjAyMzA0MTQ2MzA0MzgwMzE" f3durn="urn:adsk.wipprod:dm.lineage:Bg-MxRAbSdOYoYSgc2-JMA" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="451f3918-48fa-4799-bfe6-95b5e16cd4b3" lastsyncedrevisionid="451f3918-48fa-4799-bfe6-95b5e16cd4b3" lastboardhashguid="0ff0fcd1-aa0d-571a-64ff-7686d0eaa3f4" lastpushedtime="2023-07-12T04:37:25Z" linktopcb3d="true"/>
 <plain>
 <polygon width="0.15" layer="29">
 <vertex x="37.3" y="8.1"/>
@@ -285,6 +288,54 @@
 <wire x1="34.5" y1="49.75" x2="34.75" y2="50" width="0.15" layer="21"/>
 <text x="48.5" y="28.5" size="1.27" layer="21" rot="R180">-</text>
 <text x="51" y="28.5" size="1.27" layer="21" rot="R270">+</text>
+<text x="38.899996875" y="23.400003125" size="1.27" layer="125">C1</text>
+<text x="41.39999375" y="12.4" size="1.27" layer="125" rot="R180">C2</text>
+<text x="37.9" y="2.79999375" size="1.27" layer="125" rot="R270">C3</text>
+<text x="51.5" y="18.4999875" size="0.6096" layer="125">C4</text>
+<text x="43.499990625" y="16.999990625" size="0.6096" layer="125">C5</text>
+<text x="51.5" y="14.499996875" size="0.6096" layer="125">C6</text>
+<text x="43.499990625" y="13" size="0.6096" layer="125">C7</text>
+<text x="40.969996875" y="28.629990625" size="1.27" layer="125" rot="R180">C8</text>
+<text x="40.72999375" y="38.929996875" size="1.27" layer="125" rot="R90">C9</text>
+<text x="37.770003125" y="51.77" size="1.27" layer="125" rot="R270">C10</text>
+<text x="46.000009375" y="32.5000125" size="0.8128" layer="125" rot="R180">C11</text>
+<text x="51.5" y="33.500009375" size="0.8128" layer="125">C12</text>
+<text x="48.00000625" y="40.49999375" size="0.8128" layer="125">C13</text>
+<text x="51.5" y="37.5" size="0.8128" layer="125">C14</text>
+<text x="17.78" y="24.13" size="1.778" layer="125" rot="R180">CN1</text>
+<text x="54.09999375" y="2.199996875" size="1.27" layer="125" ratio="10">CN2</text>
+<text x="10.189996875" y="27.920009375" size="1.778" layer="125">CN3</text>
+<text x="57.45" y="50.000003125" size="1.27" layer="125" ratio="10" rot="R180">CN4</text>
+<text x="33.500009375" y="3.999990625" size="0.8128" layer="125" rot="R180" align="bottom-center">EN1</text>
+<text x="33.500009375" y="49.000003125" size="0.8128" layer="125" rot="SR180" align="bottom-center">EN2</text>
+<text x="45.400009375" y="7.300009375" size="1.27" layer="121" rot="R270">IC1</text>
+<text x="45.500009375" y="47.50000625" size="1.27" layer="121" rot="R270">IC2</text>
+<text x="32.5000125" y="7.0000125" size="0.8128" layer="125" rot="R180" align="bottom-center">LPWM1</text>
+<text x="32.5000125" y="47.50000625" size="0.8128" layer="125" rot="SR180" align="bottom-center">LPWM2</text>
+<text x="51.5" y="20.500009375" size="0.6096" layer="125">R1</text>
+<text x="43.499990625" y="18.9999875" size="0.6096" layer="125">R2</text>
+<text x="51.5" y="16.49999375" size="0.6096" layer="125">R3</text>
+<text x="43.499990625" y="14.999996875" size="0.6096" layer="125">R4</text>
+<text x="37.565" y="6.4650125" size="1.27" layer="126" rot="MR180">R5</text>
+<text x="46.165009375" y="5.7650125" size="1.27" layer="126" rot="MR180">R6</text>
+<text x="37.665" y="4.664990625" size="1.27" layer="126" rot="MR180">R7</text>
+<text x="46.000009375" y="31.4999875" size="0.8128" layer="125" rot="R180">R8</text>
+<text x="51.5" y="31.4999875" size="0.8128" layer="125">R9</text>
+<text x="48.00000625" y="39.499996875" size="0.8128" layer="125">R10</text>
+<text x="51.5" y="35.50000625" size="0.8128" layer="125">R11</text>
+<text x="39.86499375" y="50.365" size="1.27" layer="126" rot="MR180">R12</text>
+<text x="46.36500625" y="47.61499375" size="1.27" layer="126" rot="MR180">R13</text>
+<text x="39.86499375" y="44.865009375" size="1.27" layer="126" rot="MR180">R14</text>
+<text x="50.2" y="9.40000625" size="0.8128" layer="126" rot="MR270" align="bottom-center">R15</text>
+<text x="48.10000625" y="9.40000625" size="0.8128" layer="126" rot="MR270" align="bottom-center">R16</text>
+<text x="46.000009375" y="9.40000625" size="0.8128" layer="126" rot="MR270" align="bottom-center">R17</text>
+<text x="44.6000125" y="7.800009375" size="0.8128" layer="126" rot="MR180" align="bottom-center">R18</text>
+<text x="46.500009375" y="39.699996875" size="0.8128" layer="126" rot="MR270" align="bottom-center">R19</text>
+<text x="44.2999875" y="39.699996875" size="0.8128" layer="126" rot="MR270" align="bottom-center">R20</text>
+<text x="50.9" y="39.699996875" size="0.8128" layer="126" rot="MR270" align="bottom-center">R21</text>
+<text x="48.700003125" y="39.699996875" size="0.8128" layer="126" rot="MR270" align="bottom-center">R22</text>
+<text x="32.5000125" y="5.4999875" size="0.8128" layer="125" rot="R180" align="bottom-center">RPWM1</text>
+<text x="32.5000125" y="46.000009375" size="0.8128" layer="125" rot="SR180" align="bottom-center">RPWM2</text>
 </plain>
 <libraries>
 <library name="IT_MotorControlIC">

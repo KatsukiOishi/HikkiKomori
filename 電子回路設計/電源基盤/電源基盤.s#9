@@ -11571,11 +11571,17 @@ GDZJシリーズ PDFデータシート
 <pinref part="SUPPLY26" gate="GND" pin="GND"/>
 <wire x1="181.61" y1="154.94" x2="191.77" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="16"/>
+<pinref part="JP1" gate="A" pin="15"/>
+<wire x1="191.77" y1="154.94" x2="199.39" y2="154.94" width="0.1524" layer="91"/>
+<junction x="191.77" y="154.94"/>
 </segment>
 <segment>
 <pinref part="SUPPLY27" gate="GND" pin="GND"/>
 <wire x1="181.61" y1="124.46" x2="191.77" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="16"/>
+<pinref part="JP2" gate="A" pin="15"/>
+<wire x1="191.77" y1="124.46" x2="199.39" y2="124.46" width="0.1524" layer="91"/>
+<junction x="191.77" y="124.46"/>
 </segment>
 <segment>
 <pinref part="T5" gate="G$1" pin="S"/>

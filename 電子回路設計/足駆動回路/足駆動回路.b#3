@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -72,7 +72,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyY2NlZGVl" projecturn="a.cGVyc29uYWw6dWUyY2NlZGVlIzIwMjExMDIwNDU3NjI1ODc2" f3durn="urn:adsk.wipprod:dm.lineage:TEBGK38nRHKo_10KvwLmlQ" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="741de552-ae3d-4941-b2be-62375bb9d898" lastsyncedrevisionid="741de552-ae3d-4941-b2be-62375bb9d898" lastboardhashguid="189327fe-1682-5fe5-d111-4a7f39339f39" lastpushedtime="2022-06-13T08:45:51Z" linktopcb3d="true"/>
+<fusionsync huburn="a.YnVzaW5lc3M6MTFiaWdzdG9uZTE" projecturn="a.YnVzaW5lc3M6MTFiaWdzdG9uZTEjMjAyMzA0MTQ2MzA0MzgwMzE" f3durn="urn:adsk.wipprod:dm.lineage:Bg-MxRAbSdOYoYSgc2-JMA" pcbguid="144be031-0638-435b-a34c-0f17c5d598f9" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="451f3918-48fa-4799-bfe6-95b5e16cd4b3" lastsyncedrevisionid="451f3918-48fa-4799-bfe6-95b5e16cd4b3" lastboardhashguid="0ff0fcd1-aa0d-571a-64ff-7686d0eaa3f4" lastpushedtime="2023-07-12T04:37:25Z" linktopcb3d="true"/>
 <plain>
 <polygon width="0.15" layer="29">
 <vertex x="37.3" y="8.1"/>
@@ -2579,10 +2579,10 @@ design rules under a new name.</description>
 <wire x1="39.9" y1="44.7" x2="39.1" y2="43.9" width="0.1524" layer="1"/>
 <wire x1="39.1" y1="43.9" x2="36.8" y2="43.9" width="0.1524" layer="1"/>
 <wire x1="50.7" y1="41.5" x2="49.8" y2="42.4" width="0.1524" layer="16"/>
-<wire x1="36" y1="43.1" x2="36.8" y2="43.9" width="0.1524" layer="1"/>
+<wire x1="36.8" y1="43.9" x2="36.1" y2="43.2" width="0.1524" layer="1"/>
 <wire x1="38" y1="31.1" x2="37" y2="31.1" width="0.1524" layer="1"/>
-<wire x1="37" y1="31.1" x2="36" y2="32.1" width="0.1524" layer="1"/>
-<wire x1="36" y1="32.1" x2="36" y2="43.1" width="0.1524" layer="1"/>
+<wire x1="37" y1="31.1" x2="36.1" y2="32" width="0.1524" layer="1"/>
+<wire x1="36.1" y1="32" x2="36.1" y2="43.2" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$28">
 <contactref element="U4" pad="INH"/>
@@ -2593,7 +2593,14 @@ design rules under a new name.</description>
 <wire x1="49.1" y1="42.4" x2="49.1" y2="44" width="0.1524" layer="16"/>
 <via x="49.1" y="44" extent="1-16" drill="0.35"/>
 <wire x1="50.3" y1="41.2" x2="49.1" y2="42.4" width="0.1524" layer="16"/>
-<wire x1="38" y1="32" x2="49.4" y2="38.85" width="0" layer="19" extent="1-16"/>
+<wire x1="49.1" y1="44" x2="48.8" y2="44.3" width="0.1524" layer="1"/>
+<wire x1="37.2" y1="32" x2="38" y2="32" width="0.1524" layer="1"/>
+<wire x1="48.8" y1="44.3" x2="40.1" y2="44.3" width="0.1524" layer="1"/>
+<wire x1="40.1" y1="44.3" x2="39.3" y2="43.5" width="0.1524" layer="1"/>
+<wire x1="39.3" y1="43.5" x2="37" y2="43.5" width="0.1524" layer="1"/>
+<wire x1="37" y1="43.5" x2="36.5" y2="43" width="0.1524" layer="1"/>
+<wire x1="36.5" y1="43" x2="36.5" y2="32.7" width="0.1524" layer="1"/>
+<wire x1="36.5" y1="32.7" x2="37.2" y2="32" width="0.1524" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

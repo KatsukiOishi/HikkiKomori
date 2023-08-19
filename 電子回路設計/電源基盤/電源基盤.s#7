@@ -11247,6 +11247,8 @@ GDZJシリーズ PDFデータシート
 <part name="JP1" library="pinhead" deviceset="PINHD-2X8" device="" package3d_urn="urn:adsk.eagle:package:22481/2"/>
 <part name="JP2" library="pinhead" deviceset="PINHD-2X8" device="" package3d_urn="urn:adsk.eagle:package:22481/2"/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X9" device="" package3d_urn="urn:adsk.eagle:package:22483/2"/>
+<part name="SUPPLY30" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY31" library="supply" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11587,6 +11589,10 @@ GDZJシリーズ PDFデータシート
 <attribute name="NAME" x="217.17" y="146.685" size="1.778" layer="95"/>
 <attribute name="VALUE" x="217.17" y="118.11" size="1.778" layer="96"/>
 </instance>
+<instance part="SUPPLY30" gate="GND" x="214.63" y="118.11" smashed="yes" rot="MR0"/>
+<instance part="SUPPLY31" gate="+5V" x="214.63" y="148.59" smashed="yes">
+<attribute name="VALUE" x="212.725" y="151.765" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11830,6 +11836,12 @@ GDZJシリーズ PDFデータシート
 <pinref part="R14" gate="G$1" pin="1"/>
 <junction x="114.3" y="90.17"/>
 </segment>
+<segment>
+<pinref part="JP3" gate="A" pin="9"/>
+<pinref part="SUPPLY30" gate="GND" pin="GND"/>
+<wire x1="220.98" y1="123.19" x2="214.63" y2="123.19" width="0.1524" layer="91"/>
+<wire x1="214.63" y1="123.19" x2="214.63" y2="120.65" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -11877,6 +11889,12 @@ GDZJシリーズ PDFデータシート
 <segment>
 <pinref part="BZ1" gate="G$1" pin="P$1"/>
 <pinref part="SUPPLY28" gate="+5V" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="SUPPLY31" gate="+5V" pin="+5V"/>
+<pinref part="JP3" gate="A" pin="1"/>
+<wire x1="214.63" y1="146.05" x2="214.63" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="214.63" y1="143.51" x2="220.98" y2="143.51" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BPS_OR" class="1">
